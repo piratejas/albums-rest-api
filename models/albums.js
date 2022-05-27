@@ -23,12 +23,12 @@ export async function getAlbums() {
     });
   }*/
 
-/* NOT WORKING 
-  export async function searchAlbumsByTitle(title) {
+/*THIS DOES NOT WORK  
+export async function searchAlbumsByTitle(title) {
     const found = await query(`SELECT * FROM albums WHERE title = $1;`,[title]);
     return found.rows;
-  }
-*/
+  }*/
+
 //search albums by artist
 /*export function searchAlbumsByArtist(searchTerm) {
     return albums.filter(function (album) {

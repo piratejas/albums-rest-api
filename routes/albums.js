@@ -19,23 +19,8 @@ import {
 
 router.get("/", async function (req, res) {
     /*if (req.query.search !== undefined) {
-      const result = await searchAlbumsByTitle(req.query.search);
-      return res.json({ success: true, payload: result });
-    }
-  
-    if (req.query.artist !== undefined) {
-      const result = await searchAlbumsByArtist(req.query.artist);
-      return res.json({ success: true, payload: result });
-    }
-
-    if (req.query.releaseYear !== undefined) {
-      const result = await searchAlbumsByReleaseYear(req.query.releaseYear);
-      return res.json({ success: true, payload: result });
-    }
-
-    if (req.query.label !== undefined) {
-      const result = await searchAlbumsByLabel(req.query.label);
-      return res.json({ success: true, payload: result });
+      const foundAlbum = await searchAlbumsByTitle(req.query.search);
+      return res.json({ success: true, payload: foundAlbum });
     }*/
   
     const result = await getAlbums();
